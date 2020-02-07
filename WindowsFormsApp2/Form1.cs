@@ -17,6 +17,11 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-       
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'proba_transareDataSetTabelUtilizatori.Tabel_Utilizatori' table. You can move, or remove it, as needed.
+            this.tabel_UtilizatoriTableAdapter.Fill(this.proba_transareDataSetTabelUtilizatori.Tabel_Utilizatori);
+
+        }
     }
 }

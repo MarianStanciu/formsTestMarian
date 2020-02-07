@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApp2.Properties {
+namespace Meniu.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -28,9 +28,9 @@ namespace WindowsFormsApp2.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=82.208.137.149\\sqlexpress,8833;Initial Catalog=proba_transare;Persist" +
             " Security Info=True;User ID=sa;Password=pro")]
-        public string bdTest1 {
+        public string proba_transareConnectionString {
             get {
-                return ((string)(this["bdTest1"]));
+                return ((string)(this["proba_transareConnectionString"]));
             }
         }
     }
