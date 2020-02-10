@@ -73,13 +73,6 @@ namespace Meniu
             ChildForm.Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'proba_transareDataSet3.TIPURI' table. You can move, or remove it, as needed.
-            this.tIPURITableAdapter1.Fill(this.proba_transareDataSet3.TIPURI);
-            // TODO: This line of code loads data into the 'proba_transareDataSet2.TIPURI' table. You can move, or remove it, as needed.
-            this.tIPURITableAdapter.Fill(this.proba_transareDataSet2.TIPURI);
-
-        }
+       
     }
 }
