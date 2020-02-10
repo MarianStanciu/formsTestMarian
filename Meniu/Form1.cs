@@ -40,7 +40,7 @@ namespace Meniu
         {
             openChildForm(new FormBlocuri());
             
-       //     MessageBox.Show( "Ai selectat butonul blocuri", "Selectie");
+            MessageBox.Show( "Ai selectat butonul blocuri", "Selectie");
             hideSubMeniu();
 
         }
@@ -48,14 +48,14 @@ namespace Meniu
         private void btnScara_Click(object sender, EventArgs e)
         {
             openChildForm(new scari());
-          //  MessageBox.Show("Selectie", "Ai selectat butonul scari");
+            MessageBox.Show("Selectie", "Ai selectat butonul scari");
             hideSubMeniu();
         }
 
         private void btnApartamente_Click(object sender, EventArgs e)
         {
             openChildForm(new Apartamente());
-        //    MessageBox.Show("Selectie", "Ai selectat butonul apartamente");
+           MessageBox.Show("Selectie", "Ai selectat butonul apartamente");
             hideSubMeniu();
         }
         private Form ActiveForm = null;
@@ -71,6 +71,15 @@ namespace Meniu
             panelChildForm.Tag = ChildForm;
             ChildForm.BringToFront();
             ChildForm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'proba_transareDataSet3.TIPURI' table. You can move, or remove it, as needed.
+            this.tIPURITableAdapter1.Fill(this.proba_transareDataSet3.TIPURI);
+            // TODO: This line of code loads data into the 'proba_transareDataSet2.TIPURI' table. You can move, or remove it, as needed.
+            this.tIPURITableAdapter.Fill(this.proba_transareDataSet2.TIPURI);
+
         }
     }
 }

@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.proba_transareDataSet = new Meniu.proba_transareDataSet();
-            this.probatransareDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proba_transareDataSet1 = new Meniu.proba_transareDataSet1();
-            this.articolenewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.articole_newTableAdapter = new Meniu.proba_transareDataSet1TableAdapters.articole_newTableAdapter();
             this.codintDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.denumireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idtipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.articolenewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proba_transareDataSet1 = new Meniu.proba_transareDataSet1();
+            this.proba_transareDataSet = new Meniu.proba_transareDataSet();
+            this.probatransareDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.articole_newTableAdapter = new Meniu.proba_transareDataSet1TableAdapters.articole_newTableAdapter();
             this.btnInchide = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.articolenewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proba_transareDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proba_transareDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.probatransareDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proba_transareDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.articolenewBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -55,37 +55,13 @@
             this.denumireDataGridViewTextBoxColumn,
             this.idtipDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.articolenewBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(738, 674);
+            this.dataGridView1.Size = new System.Drawing.Size(371, 547);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // proba_transareDataSet
-            // 
-            this.proba_transareDataSet.DataSetName = "proba_transareDataSet";
-            this.proba_transareDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // probatransareDataSetBindingSource
-            // 
-            this.probatransareDataSetBindingSource.DataSource = this.proba_transareDataSet;
-            this.probatransareDataSetBindingSource.Position = 0;
-            // 
-            // proba_transareDataSet1
-            // 
-            this.proba_transareDataSet1.DataSetName = "proba_transareDataSet1";
-            this.proba_transareDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // articolenewBindingSource
-            // 
-            this.articolenewBindingSource.DataMember = "articole_new";
-            this.articolenewBindingSource.DataSource = this.proba_transareDataSet1;
-            // 
-            // articole_newTableAdapter
-            // 
-            this.articole_newTableAdapter.ClearBeforeFill = true;
             // 
             // codintDataGridViewTextBoxColumn
             // 
@@ -111,12 +87,37 @@
             this.idtipDataGridViewTextBoxColumn.Name = "idtipDataGridViewTextBoxColumn";
             this.idtipDataGridViewTextBoxColumn.Width = 125;
             // 
+            // articolenewBindingSource
+            // 
+            this.articolenewBindingSource.DataMember = "articole_new";
+            this.articolenewBindingSource.DataSource = this.proba_transareDataSet1;
+            // 
+            // proba_transareDataSet1
+            // 
+            this.proba_transareDataSet1.DataSetName = "proba_transareDataSet1";
+            this.proba_transareDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // proba_transareDataSet
+            // 
+            this.proba_transareDataSet.DataSetName = "proba_transareDataSet";
+            this.proba_transareDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // probatransareDataSetBindingSource
+            // 
+            this.probatransareDataSetBindingSource.DataSource = this.proba_transareDataSet;
+            this.probatransareDataSetBindingSource.Position = 0;
+            // 
+            // articole_newTableAdapter
+            // 
+            this.articole_newTableAdapter.ClearBeforeFill = true;
+            // 
             // btnInchide
             // 
             this.btnInchide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnInchide.Location = new System.Drawing.Point(597, 624);
+            this.btnInchide.Location = new System.Drawing.Point(446, 11);
+            this.btnInchide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInchide.Name = "btnInchide";
-            this.btnInchide.Size = new System.Drawing.Size(129, 38);
+            this.btnInchide.Size = new System.Drawing.Size(97, 31);
             this.btnInchide.TabIndex = 1;
             this.btnInchide.Text = "Inchide";
             this.btnInchide.UseVisualStyleBackColor = false;
@@ -124,19 +125,20 @@
             // 
             // scari
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 674);
+            this.ClientSize = new System.Drawing.Size(554, 548);
             this.Controls.Add(this.btnInchide);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "scari";
             this.Text = "scari";
             this.Load += new System.EventHandler(this.scari_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.articolenewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proba_transareDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proba_transareDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.probatransareDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proba_transareDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.articolenewBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
