@@ -76,7 +76,7 @@
             this.panelSubAsociatie.Controls.Add(this.btnScara);
             this.panelSubAsociatie.Controls.Add(this.btnBloc);
             this.panelSubAsociatie.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubAsociatie.Location = new System.Drawing.Point(0, 145);
+            this.panelSubAsociatie.Location = new System.Drawing.Point(0, 235);
             this.panelSubAsociatie.Name = "panelSubAsociatie";
             this.panelSubAsociatie.Size = new System.Drawing.Size(250, 124);
             this.panelSubAsociatie.TabIndex = 2;
@@ -136,7 +136,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.SeaShell;
-            this.button1.Location = new System.Drawing.Point(0, 100);
+            this.button1.Location = new System.Drawing.Point(0, 190);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(250, 45);
@@ -149,12 +149,11 @@
             // panelLogo
             // 
             this.panelLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogo.BackgroundImage")));
-            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 100);
+            this.panelLogo.Size = new System.Drawing.Size(250, 190);
             this.panelLogo.TabIndex = 0;
             // 
             // panelChildForm
